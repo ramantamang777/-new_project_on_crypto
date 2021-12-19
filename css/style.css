@@ -1,235 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jumhai</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src=
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-        </script>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.navbar-img img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+}
+
+/* utility colors*/
+.bg-new
+{
+    background-image: linear-gradient(to right, #83b2b3, #7062F0 ); 
+}
+
+.b-red{
+    border: 2px solid rgb(233, 60, 117); 
+}
+
+/* navbar section */
+.navbar-border
+{
+    margin: 7px;
+    border: 2px solid rgb(233, 60, 117);
+    border-radius :12px;
+}
 
 
-</head>
-<body class="dark-mode">
+/* body section */
+body
+{
+   background-image: linear-gradient(to right, #5e90d1, #67306e );
+   font-size: 16px;  
+}
 
-    <!-- navbar section -->
-    
-    </head>
-    <header>
-     <nav class="navbar navbar-border navbar-expand-lg navbar-dark bg-new bg-new ">
-        <div class="container-fluid navbar-img ">
-          <img  id ="logo-img" class="img-fluid animated" src="img/logo.png" alt="mylogo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Mercuric</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
-              </li>
+/* logo styling section */
+.logo img{
+    height: 250px;
+    width:auto;
+    border-radius: 50%;
+    position: relative;
+    animation: mymove 6s;
+}
+.logo p{
+    color: white;
+}
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Telegram</a>
-              </li>
+/* cards section here */
+.card-t
+{
+    height: 450px;
+    color: white;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid  rgb(233, 60, 117);
+}
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Facebook</a>
-              </li>
+.card-body-img img{
+    height: 40px;
+}
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Instagram</a>
-              </li>
+.card img{
+        height: 45px;
+        padding: 3px;
+}
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Twitter</a>
-              </li>
+/* cards section ends here */
 
-              <li class="nav-item">
-                <li class="nav-item">
-                  <button class="change btn-dark"> OFF </button>
-                </li>
-              </li>
-            </ul>
-          </div>
-        </div>
-       </nav>
-    </header>
-    <!-- navbar section ends -->
+/* content-section*/
 
-    <!-- logo section here -->
-    <section class="logo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center mt-4">
-              <img src="img/logo.png" alt="Mercuric">
-              <p>🅼🅴🆁🅲🆄🆁🅸🅲</p>
-          </div>
-        </div>
-      </div>
-    </section>
+.content-section{
+    margin: 30px 4px 30px 4px;
+}
+.content-section .content-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-section .image img
+{
+  height: 500px;
+}
+.text-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-img img{
+    height: 80px;
+    width: auto;
+}
 
-    <!-- logo section ends here -->
-    
-    <!-- cards section here -->
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card card-t mt-4">
-                        <div class="card-header text-center"><h4 style="padding: 5px;">An Ecosystem with Transparency and Governance</h4></div>
-                        <div class="card-body card-body-img text-center mt-8">
-                          <img src="img/3.png" alt="">
-                            <p>MerCuric (Curic) is a Platform that brings Transparency to crypto. MerCuric will offer a bespoke crypto service ecosystem that assists tokens with launching, presales, and finding talent safely in the crypto industry.					
-                            </p>
-                        </div>
-                    </div>
-                </div>
+.btn {
+    background: transparent;
+    border: 2px solid rgb(233, 60, 117) ;
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+    background-color: rgb(26, 25, 25);
+    color: rgb(255, 255, 255);
+}
 
-                <div class="col-md-4 ">
-                  <div class="card card-t mt-4">
-                    <div class="card-header text-center "><h4 style="padding: 5px;">CURIC Launch</h4></div>
-                    <div class="card-body card-body-img text-center mt-8">
-                      <img src="img/4.png" alt="">
-                      <p>The CURIC Launch Decentralized Launchpad will offer top-level governance and transparency and support PreSales for decentralized finance (DeFi) projects. Our mandated in- house KYC and AI-enabled scans smart contracts for vulnerabilities and potential scams to enhance security and trust.                        
-                          <!-- Many of the current online launchpads offer PreSales for crypto projects with little oversight, support, and security for their investors. -->
-                        </p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-t mt-4">
-                    <div class="card-header text-center"><h4 style="padding: 5px;">CURIC Marketplace</h4></div>
-                    <div class="card-body card-body-img text-center mt-8">
-                      <img src="img/5.png" alt="">
-                        <p>The CURIC a fully integrated marketplace will act as a one-stop platform for all Crypto related services bridging the service providers and end-users. Hiring in the crypto industry is a difficult task at the moment.					
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <!-- cards section ends here -->
+/* content-section ends here */
+
+/* get-start-with-mercuric */
+
+.get-start-with-mercuric ul li {
+    list-style-type: none;
+}
 
 
- <!-- section--->
- <section class="content-section">   
-  <div class="container-fluid">
-    <div class="container bg-light">
-      <div class="row">
-            <div class="col-md-8 text-center text-img">
-              <img src="img/text11.png" alt="" class="textcenter">
-              <img src="img/impp.png" alt="" class="textcenter">
-            </div>
-        <div class="col-md-4 text-center">
-          <div class="image">
-            <img src="img/vv.jpg" alt="newlogo">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
- </section>
- <!-- section ends  -->
-
- <!-- content-section -->
- <div class="col-lg-8 mx-auto p-3 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
-      <img src="img/6.png" alt="" width="65px" height="60px">
-    </a>
-  </header>
-
-  <main>
-    <h1>Get started with MerCuric</h1>
-    <p class="fs-5 col-md-8">Many entrepreneurs have lost money paying for services that are never delivered. Our marketplace will provide a safer alternative for interacting in the crypto-verse by providing merow accounts for service providers so clients know their funds are safe until their desired product is delivered. To protect end-user interest all sellers onboarded go through a KYC process which adds a layer of security for all business interactions.</p>
-
-    <div class="mb-5">
-      <a href="#" class="btn btn-small px-6">Learn more</a>
-    </div>
-
-    <div class="row get-start-with-mercuric">
-      <div class="col-md-6">
-        <h2>CURIC Tokenomics</h2>
-        <p>With CURIC, every transaction, buy has a 13% and sell has a 15% tax that is distributed accordingly:</p>
-        <ul class="icon-list">
-          <li><i class="fas fa-angle-right"></i> Buy 13% — Sell 15%	</li>
-          <li> <i class="fas fa-angle-right"></i>"Holder Reward 5% (BNB reflections)
-            Automatic Liquidity 2%
-            Development 3%
-            Marketing 3%
-            Buy Back and Burn 3% (During Sell)"</li>
-        </ul>
-      </div>
-
-      <div class="col-md-6">
-        <h2>Token Distribution</h2>
-        <p>Total Supply -- 1,000,000,000 (1 Billion) -- $CURIC	</p>
-        <ul class="icon-list">
-          <li><i class="fas fa-angle-right"></i> Burn
-            guide</li>
-            <li>53%
-            </li>
-
-            <li><i class="fas fa-angle-right"></i> Private</li>
-              <li>4.68%</li>
-              <li><i class="fas fa-angle-right"></i> Pre-sale</li>
-              <li>18.38%</li>
-              <li><i class="fas fa-angle-right"></i> Public / Liquidity </li>
-              <li>13.95%</li>
-              <li><i class="fas fa-angle-right"></i> Launch Burn</li>
-              <li>10%</li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-  </footer>
-<!-- content-section ends here -->
+/* dark mode */
+.change {
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 30%;
+    width: 38px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+.dark{
+    background-image: radial-gradient(#1B1A1D, #1B1A1C, #1B1A1E);
+    color: #e6e6e6;
+}
+/* dark-mode ends here */
 
 
-    
- <script>
-   $(" .change").on("click", function() {
-     if( $("body").hasClass("dark"))
+
+/* queries section mobile size */
+@media only screen and (max-width: 600px) {
+    .logo img{
+        height: 80px;
+        border-radius: 50%;
+    }
+    .card-body-img p {
+        font-size: 0.9rem;
+    }
+    .card-t{
+        height: 400px;
+    }
+}
+
+ @media only screen and (max-width : 300px)
+ { 
+    .card-t{
+        height: 400px;
+    }
+
+ } 
+ @media only screen and (max-width : 1000px)
+ { 
+    .logo img{
+        height: 120px;
+        border-radius: 50%;
+    }
+    .card-body-img p{
+        font-size: 00.9rem;
+    }
+    .card-header h4{
+        font-size: 1rem;
+    }
+
+ } 
+
+ @media only screen and (max-width : 1400px)
+ { 
+    .text-img img{
+        height: 35px;
+        width: auto;
+    }
+
+    .content-section .image img
      {
-       $("body").removeClass("dark");
-       $(".change").text("OFF");
+      height: 300px;
      }
-     else{
-       $("body").addClass("dark");
-       $(".change").text("ON");
+
+ }
+
+ @media only screen and (max-width : 400px)
+ { 
+    .text-img img{
+        height: 25px;
+        width: auto;
+    }
+
+    .content-section .image img
+     {
+      height: 300px;
      }
-   });
- </script>
 
- <script>
-   $(".change").on("click", function(){
-      if($(".navbar").hasClass("dark"))
-      {
-        $(".navbar").removeClass("dark");
-        $(".change").text("OFF");
-      }
-      else{
-        $(".navbar").addClass("dark");
-        $(".change").text("ON");
-      }
-   });
- </script>
-    
+ }
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
-</html>
+ @media only screen and (max-width : 780px) {
+    .text-img {
+        padding: 30px 0px 30px 0px;
+    }
+ }
+/* keyframe styling */
+@keyframes mymove {
+    0%   {top: 0px; left: -50px;}
+    25%  {top: 0px; left: 0px;}
+  }
+
+
