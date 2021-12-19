@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 .navbar-img img
 {
@@ -70,6 +72,35 @@ body
 
 /* cards section ends here */
 
+/* content-section*/
+
+.content-section{
+    margin: 20px 4px 20px 4px;
+}
+.content-section .content-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-section .image img
+{
+  height: 500px;
+}
+.text-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-img img{
+    height: 80px;
+    width: auto;
+}
+
+/* content-section ends here */
+
+
+
 /* dark mode */
 .change {
     cursor: pointer;
@@ -96,17 +127,63 @@ body
     }
     .card-body-img p {
         font-size: 0.9rem;
-    };
-  }
+    }
+    .card-t{
+        height: 400px;
+    }
+}
 
  @media only screen and (max-width : 300px)
  { 
     .card-t{
-        height: 500px;
+        height: 400px;
+    }
+
+ } 
+ @media only screen and (max-width : 1000px)
+ { 
+    .card-body-img p{
+        font-size: 00.9rem;
+    }
+    .card-header h4{
+        font-size: 1rem;
     }
 
  } 
 
+ @media only screen and (max-width : 1400px)
+ { 
+    .text-img img{
+        height: 35px;
+        width: auto;
+    }
+
+    .content-section .image img
+     {
+      height: 300px;
+     }
+
+ }
+
+ @media only screen and (max-width : 400px)
+ { 
+    .text-img img{
+        height: 25px;
+        width: auto;
+    }
+
+    .content-section .image img
+     {
+      height: 300px;
+     }
+
+ }
+
+ @media only screen and (max-width : 780px) {
+    .text-img {
+        padding: 30px 0px 30px 0px;
+    }
+ }
 /* keyframe styling */
 @keyframes mymove {
     0%   {top: 0px; left: -50px;}
