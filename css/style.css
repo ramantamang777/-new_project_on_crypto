@@ -251,7 +251,7 @@ body
  }
 /* keyframe styling */
 @keyframes mymove {
-    0%   {top: 0px; left: -50px;}
+    0%   {top: 0px; left: -90px;}
     25%  {top: 0px; left: 0px;}
   }
 
