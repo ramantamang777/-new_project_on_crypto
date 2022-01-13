@@ -1,6 +1,5 @@
-/* reset styling */
-
-*{
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,11 +9,15 @@
 }
 .navbar-img img
 {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 45px;
     border-radius: 30px;
 }
 
+.svg-small i{
+    height: 45px;
+    width: 45px;
+}
 /* utility colors*/
 .bg-new
 {
@@ -42,10 +45,12 @@ body
 }
 
 /* logo styling section */
+.logo{
+    padding: 18px 0px 18px 0px;
+}
 .logo img{
-    height: 250px;
-    width:auto;
-    border-radius: 50%;
+    height: 180px;
+    width: 300px;
     position: relative;
     animation: mymove 6s;
 }
@@ -110,7 +115,7 @@ body
     align-items: center;
 }
 .text-img img{
-    height: 80px;
+    height: 280px;
     width: auto;
 }
 
@@ -161,8 +166,8 @@ body
 /* queries section mobile size */
 @media only screen and (max-width: 600px) {
     .logo img{
-        height: 80px;
-        border-radius: 50%;
+        height: 90px;
+        width: 200px;
     }
     .card-body-img p {
         font-size: 0.9rem;
@@ -190,8 +195,7 @@ body
  @media only screen and (max-width : 1000px)
  { 
     .logo img{
-        height: 120px;
-        border-radius: 50%;
+        height: 160px;
     }
     .card-body-img p{
         font-size: 00.9rem;
@@ -205,7 +209,7 @@ body
  @media only screen and (max-width : 1400px)
  { 
     .text-img img{
-        height: 35px;
+        height: 135px;
         width: auto;
     }
 
@@ -231,7 +235,7 @@ body
  @media only screen and (max-width : 400px)
  { 
     .text-img img{
-        height: 25px;
+        height: 60px;
         width: auto;
     }
 
@@ -244,19 +248,16 @@ body
     } 
 
  }
- 
+
  @media only screen and (max-width : 780px) {
     .text-img {
         padding: 30px 0px 30px 0px;
     }
  }
-
 /* keyframe styling */
 @keyframes mymove {
     0%   {top: 0px; left: -90px;}
     25%  {top: 0px; left: 0px;}
   }
-
-
 
 
